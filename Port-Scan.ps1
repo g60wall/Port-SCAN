@@ -2,7 +2,7 @@
 function Port-Scan {
 <#
 .SYNOPSIS
-Nihsang payload which Scan IP-Addresses, Ports and HostNames
+ Scan IP-Addresses, Ports and HostNames
 .DESCRIPTION
 Scan for IP-Addresses, HostNames and open Ports in your Network.
     
@@ -31,13 +31,9 @@ Use above to do a port scan on default ports.
 PS > Port-Scan -StartAddress 192.168.0.1 -EndAddress 192.168.0.254 -ResolveHost -ScanPort -TimeOut 500
 .EXAMPLE
 PS > Port-Scan -StartAddress 192.168.0.1 -EndAddress 192.168.10.254 -ResolveHost -ScanPort -Port 80
-.LINK
-http://www.truesec.com
-http://blogs.technet.com/b/heyscriptingguy/archive/2012/07/02/use-powershell-for-network-host-and-port-discovery-sweeps.aspx
-https://github.com/samratashok/nishang
+
     
-.NOTES
-Goude 2012, TrueSec
+
 #>
     [CmdletBinding()] Param(
         [parameter(Mandatory = $true, Position = 0)]
