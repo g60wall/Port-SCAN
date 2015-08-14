@@ -1,5 +1,5 @@
 ﻿
-function Port-Scan {
+function Port-Diag {
 <#
 .SYNOPSIS
  Scan IP-Addresses, Ports and HostNames
